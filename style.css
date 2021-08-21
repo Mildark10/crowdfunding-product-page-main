@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Globales*/
+
+html {
+    box-sizing: border-box;
+    background-color: rgb(249, 249, 252);
+}
+
+img {
+    max-width: 100%;
+}
+
+.caja-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja-centro.estilo {
+    width: 50%;
+    border: 0.1px solid rgb(243, 243, 243);
+    background: #fff;
+    box-shadow: 1px 1px 1px 0px rgba(248, 248, 248, 0.5);
+    border-radius: 0.5rem;
+    padding: 0 0 2rem 0;
+    margin: 0 0 1.2rem 0;
+}
+
+.caja-texto {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    background-color: rgb(117, 190, 192);
+    font-weight: 300;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*header*/
+
+section {
+    background-image: url(images/image-hero-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    flex-wrap: wrap;
+}
+
+.contenedor-body {
+    display: flex;
+    width: 82.3vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 0;
+    margin: 2.8rem 0rem 13.8rem 5rem;
+}
+
+.navigation-ul {
+    width: 87%;
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 2.4rem;
+    justify-content: flex-end;
+}
+
+.navigation-ul li {
+    list-style: none;
+    margin-left: 14px;
+}
+
+.navigation-ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navigation-ul li a:hover {
+    color: #e6e2e3;
+    cursor: pointer;
+}
+
+
+/* fin del header*/
+
+
+/* CAja de texto de mastercraft*/
+
+.caja-centro.estilo .mastrcraft {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.caja-logo {
+    position: relative;
+    margin: -1.5rem 0 0 0rem;
+}
+
+.caja-texto.tituloP,
+h4 {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0 0 2.5rem 0;
+}
+
+.btn-mast {
+    width: 91%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-left a,
+.btn-rigth a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-left:hover {
+    background-color: rgb(121, 176, 177);
+}
+
+.btn-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-btn {
+    display: flex;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+}
+
+.icon img {
+    width: 81%;
+}
+
+.btn-icon a {
+    font-weight: 400;
+    margin: 0 0rem 0 1.8rem;
+}
+
+
+/* fin de la caja mastercraft*/
+
+
+/*precios */
+
+.caja-centro.estilo.precios {
+    display: flex;
+    justify-content: center;
+}
+
+.box-precio {
+    width: 98%;
+    display: flex;
+    padding: 0 0 2rem 0;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.box-precio p {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.box-precio h3 {
+    font-weight: 200;
+    font-size: 16px;
+    color: #646062cd;
+}
+
+.division {
+    color: #646062cd;
+    width: 0px;
+}
+
+.caja-linea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.linea {
+    border-radius: 140px;
+    box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.35);
+    height: 10px;
+}
+
+.linea.principal {
+    width: 89%;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+
+.linea.secundaria {
+    width: 85%;
+    background-color: rgb(91, 167, 166);
+}
+
+
+/*fin de precios */
+
+
+/* Abaout caja */
+
+.caja-about {
+    width: 90%;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.caja-about h2 {
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+
+.caja-about p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.caja-centro.about {
+    width: 90%;
+    border: 0.1px solid rgb(243, 243, 243);
+    background: #fff;
+    box-shadow: 1px 1px 1px 0px rgba(248, 248, 248, 0.5);
+    border-radius: 0.5rem;
+    padding: 0 0 1.5rem 0;
+    margin: 0 0 1.8rem 0;
+}
+
+.centro-about {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+}
+
+.title-left {
+    font-size: 18px;
+}
+
+.title-rigth {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(117, 190, 192);
+}
+
+.centroTexto-about {
+    display: flex;
+    width: 91%;
+    font-weight: 300;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+.btn-mast.about {
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+}
+
+.btn-left {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-texto {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-texto h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.about-texto span {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(181, 179, 179);
+    flex-direction: column;
+}
+
+.about-boton {
+    background-color: rgb(117, 190, 192);
+}
+
+.btn-about {
+    text-align: center;
+    background-color: rgb(117, 190, 192);
+    font-weight: 300;
+    padding: 14px 25px 10px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-about a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mahogany {
+    color: #e6e2e3;
+}
+
+.mahogany-btn {
+    background: #e6e2e3;
+}
+
+.mahogany-btn a {
+    color: #646062cd;
+    text-decoration: none;
+}
+
+
+/* botones*/
+
+
+/* */
+
+
+/*fin de about */
+
+
+/* mediaquery*/
+
+
+/* 
+@media(min-width:) {}
+ */
+
+@media (max-width:475px) {
+    section {
+        background-image: url(images/image-hero-mobile.jpg);
+        height: 50vh;
+        background-size: cover;
+        background-position: left center;
+    }
+    .contenedor-body {
+        width: 94%;
+        margin: 1rem 0rem 8.8rem 2rem;
+        justify-content: space-between;
+    }
+    .caja-centro.estilo {
+        width: 87%;
+        border: 0.1px solid rgb(243, 243, 243);
+        background: #fff;
+        box-shadow: 1px 1px 1px 0px rgba(248, 248, 248, 0.5);
+        border-radius: 0.5rem;
+        padding: 0 0 2rem 0;
+        margin: 0 0 1.2rem 0;
+    }
+    .caja-centro.estilo.precios {
+        flex-direction: column;
+    }
+    .box-precio {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-left a {
+        text-decoration: none;
+        color: #fff;
+        padding: 3px 18px 3px 18px;
+    }
+    .btn-mast {
+        justify-content: space-evenly;
+    }
+    .caja-btn,
+    .icon img {
+        width: 50px;
+    }
+    .division {
+        width: 80px;
+        color: #646062cd;
+    }
+    .btn-rigth,
+    .navigation {
+        display: none !important;
+    }
+    .menuResponsive {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/icon-hamburger.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuResponsive.active {
+        background: url(images/icon-close-menu.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* 62.5%=10px de 16px */
+    box-sizing: border-box;
+    background: rgb(249, 249, 252);
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: 99inherit;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.contenido-caja {
+    width: 50%;
+    margin-top: 200px;
+    border: 0.1px solid rgb(243, 243, 243);
+    background: #fff;
+    box-shadow: 1px 1px 1px 0px rgba(248, 248, 248, 0.5);
+    border-radius: 0.5rem;
+}
+
+
+/*Header*/
+
+.site-header.inicio {
+    background-image: url(images/image-hero-desktop.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10vh;
+    min-height: 22rem;
+}
+
+.contenedor.contenido-header {
+    justify-content: space-between;
+    width: 78%;
+    margin-top: 225px;
+    margin-left: 2px;
+}
+
+.contenido-nav ul a {
+    color: rgb(211, 211, 211);
+    margin-right: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.contenido-nav a:last-of-type {
+    margin-right: 0;
+}
+
+.contenido-nav a:hover {
+    color: rgb(158, 156, 156);
+}
+
+.contenido-caja.box {
+    position: relative;
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.caja-logo {
+    position: absolute;
+    margin-top: -1.5rem;
+}
+
+.caja-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3.5rem 2.5rem 3.5rem;
+}
+
+.box-titulos {
+    margin: 4rem 0 3rem 0;
+}
+
+.box-titulos h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-titulos h4 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.btn-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rgb(48, 117, 119);
+    font-weight: 300;
+    padding: 14px 20px 14px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.btn.left a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+.btn.left:hover {
+    background-color: rgb(61, 139, 141);
+}
+
+.btn.rigth {
+    background-color: rgb(237, 243, 237);
+    border: 1px solid rgb(245, 245, 247);
+}
+
+.btn.rigth a {
+    color: rgb(59, 101, 102);
+    text-decoration: none;
+}
+
+.contenido-precios.contenido-caja {
+    margin: 220px 0 25px 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 4.5rem 0;
+    margin-left: 338px;
+}
+
+.box-precio {
+    border: 1px solid violet;
+    width: 90%;
+    display: flex;
+    padding: 0 0 4rem 0;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.box-precio p {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.box-precio h3 {
+    font-weight: 200;
+}
+
+.box-precio.division {
+    border-left: 6px solid rgb(82, 177, 82);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}

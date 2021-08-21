@@ -1,0 +1,143 @@
+/* globales */
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 62.5%=10px de 16px */
+    box-sizing: border-box;
+    background: rgb(249, 249, 252);
+    font-family: 'Commissioner', sans-serif;
+}
+
+:root {
+    /*colors*/
+    --white: hsl(0, 0%, 100%);
+    --primary-M-cian: hsl(176, 50%, 47%);
+    --primary-D-cian: hsl(176, 72%, 28%);
+    --neutral-black: hsl(0, 0%, 0%);
+    --neutral-D-gray: hsl(0, 0%, 48%);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--neutral-black);
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--neutral-D-gray);
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 0;
+    width: 54%;
+}
+
+
+/* fin de globales*/
+
+
+/*seccion principal*/
+
+.body {
+    position: relative;
+}
+
+.navegacion {
+    display: flex;
+    width: 78%;
+    margin-top: 3%;
+    top: 0;
+    left: 11%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.navegacion .nav {
+    padding: 0;
+}
+
+.navegacion a {
+    margin-right: 1.5rem;
+}
+
+.navegacion a:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px) and (min-width: 240px) {
+    .navigation {
+        display: none;
+    }
+    .navigation.active {
+        height: 30%;
+        width: 70%;
+        position: fixed;
+        display: flex;
+        background-color: var(--white);
+        flex-direction: column;
+        z-index: 33;
+        text-align: center;
+        padding: 0;
+        top: 45px;
+        left: 45px;
+        border-radius: 3%;
+        box-shadow: -1px 1px 10px 10px rgba(0, 0, 0, 0.06) inset;
+        -webkit-box-shadow: -2px 2px 16px 12px rgba(0, 0, 0, 0.06) inset;
+        -moz-box-shadow: -2px 2px 16px 12px rgba(0, 0, 0, 0.06) inset;
+    }
+    .navigation.active a {
+        text-align: left;
+        position: relative;
+        color: var(--neutral-black);
+        font-weight: 600;
+        padding: 1rem;
+        text-shadow: -1px 1px 10px 10px rgba(0, 0, 0, 0.06) inset;
+    }
+    .navigation.active span {
+        border: 1px solid rgb(225, 220, 220);
+    }
+    .menuResponsive {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icon-hamburger.svg);
+        background-size: 30px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuResponsive.active {
+        z-index: 3;
+        background: url(../images/icon-close-menu.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    section.sticky .menuResponsive {
+        filter: invert(1);
+    }
+}
+
+.body {}
