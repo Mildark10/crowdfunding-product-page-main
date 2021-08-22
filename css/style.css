@@ -48,9 +48,14 @@ section {
 
 .content {
     margin: 0 auto;
-    border: 1px solid;
     padding: 0;
     width: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 5px;
 }
 
 
@@ -83,6 +88,66 @@ section {
 
 .navegacion a:last-child {
     margin-right: 0;
+}
+
+.mastercraft {
+    z-index: 33;
+    margin-top: -75px;
+}
+
+.mastercraft__logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: -1.5rem 0 0 0rem;
+}
+
+.mastercraft__texto {
+    text-align: center;
+}
+
+.mastercraft__texto h4 {
+    margin-top: 0.7rem;
+    color: var(--neutral-D-gray);
+}
+
+.mastercraft_btn {
+    display: flex;
+    width: 90%;
+    border: 1px solid;
+    justify-content: space-between;
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--primary-D-cian);
+    font-weight: 300;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-M-cian);
+}
+
+.btn__derecha {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    margin: 0rem 1rem 4rem 0rem;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon__texto a {
+    font-weight: 400;
+    margin: 0 0rem 0 1.8rem;
 }
 
 @media screen and (max-width: 767px) and (min-width: 240px) {
@@ -138,6 +203,20 @@ section {
     section.sticky .menuResponsive {
         filter: invert(1);
     }
+    .mastercraft {
+        margin-top: -60px;
+        width: 90%;
+    }
+    .mastercraft__texto {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 10px 16px 10px 16px;
+    }
+    .icon__texto {
+        display: none;
+        visibility: hidden;
+    }
 }
-
-.body {}
