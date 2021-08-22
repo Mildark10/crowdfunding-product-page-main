@@ -10,7 +10,7 @@
 html {
     /* 62.5%=10px de 16px */
     box-sizing: border-box;
-    background: rgb(249, 249, 252);
+    background: rgba(144, 146, 145, 0.124);
     font-family: 'Commissioner', sans-serif;
 }
 
@@ -56,6 +56,20 @@ section {
     flex-direction: column;
     background-color: var(--white);
     border-radius: 5px;
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--primary-D-cian);
+    font-weight: 300;
+    padding: 16px 22px 16px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-M-cian);
 }
 
 
@@ -114,40 +128,46 @@ section {
 .mastercraft_btn {
     display: flex;
     width: 90%;
-    border: 1px solid;
     justify-content: space-between;
-}
-
-.btn {
-    text-align: center;
-    background-color: var(--primary-D-cian);
-    font-weight: 300;
-    padding: 12px 20px 12px 20px;
-    border-radius: 30px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: var(--primary-M-cian);
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .btn__derecha {
     position: relative;
+    display: flex;
 }
 
 .icon {
+    padding: 0;
+    width: 50px;
     position: absolute;
-    margin: 0rem 1rem 4rem 0rem;
+    cursor: pointer;
+    margin: -0.2rem 0rem 0rem 0.5rem;
 }
 
-.icon img {
-    width: 100%;
+.icon__texto.btn {
+    background-color: rgba(144, 146, 145, 0.124);
+    font-weight: 800;
+    padding: 16px 24px 16px 24px;
+    margin: 0 0rem 0 1.8rem;
 }
 
 .icon__texto a {
-    font-weight: 400;
-    margin: 0 0rem 0 1.8rem;
+    margin-left: 1rem;
+    color: var(--primary-M-cian);
+}
+
+.btn__derecha:hover a {
+    color: var(--neutral-D-gray);
+}
+
+.btn__derecha:hover svg .circle {
+    fill: var(--neutral-D-gray);
+}
+
+.btn__derecha:hover svg .path {
+    fill: rgba(239, 242, 240, 0.275);
 }
 
 @media screen and (max-width: 767px) and (min-width: 240px) {
@@ -217,6 +237,5 @@ section {
     }
     .icon__texto {
         display: none;
-        visibility: hidden;
     }
 }
