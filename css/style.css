@@ -221,6 +221,7 @@ section {
 .box-precio p {
     font-weight: 900;
     font-size: 25px;
+    color: #000;
 }
 
 .box-precio h3 {
@@ -273,9 +274,8 @@ section {
 }
 
 .cards__abaout {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
     padding: 1.8rem 2rem 1.8rem 2rem;
 }
 
@@ -326,6 +326,105 @@ section {
 
 .btn__about_m {
     background-color: var(--neutral-D-gray);
+}
+
+
+/*modal js-css*/
+
+
+/* .modal-cards {
+    display: none;
+} */
+
+.superior__nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.modal__list {
+    display: flex;
+    text-align: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.modal__left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.modal__title_card h2 {
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.modal__rigth {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.modal_card {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.modal_number {
+    color: var(--primary-D-cian);
+    font-weight: 600;
+}
+
+.modals_number {
+    display: flex;
+    align-items: center;
+}
+
+.modals_number h3 {
+    font-size: 1.4rem;
+    margin-right: 0.3rem;
+}
+
+.number__mahogany {
+    color: var(--primary-M-cian);
+}
+
+.modals_number h3 {
+    font-weight: 700;
+}
+
+.modals_number h4 {
+    color: var(--neutral-D-gray);
+}
+
+.icon__modal {
+    margin-top: 1rem;
+}
+
+.texto_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 1.5rem;
+}
+
+.texto_modal h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.texto_modal p {
+    text-align: center;
+}
+
+.texto_modal .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px 22px 10px 22px;
 }
 
 @media screen and (max-width: 767px) and (min-width: 240px) {
@@ -465,5 +564,31 @@ section {
     .btn__about_l a {
         text-align: center;
         font-size: .6rem;
+    }
+    /*modal*/
+    .modal__list {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .modal__title_card h2 {
+        margin-left: 0.25rem;
+        font-size: 0.8rem;
+    }
+    .modal__left {
+        padding-bottom: 0.5rem;
+    }
+    .modal_number {
+        display: flex;
+    }
+    .modal_number h3 {
+        font-size: 0.8rem;
+    }
+    .responsive_card_modal {
+        width: 110%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .modal_text p {
+        font-size: 0.9rem;
     }
 }
