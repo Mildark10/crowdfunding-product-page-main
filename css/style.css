@@ -26,6 +26,7 @@ html {
 a {
     color: var(--white);
     text-decoration: none;
+    font-weight: 700;
 }
 
 h1 {
@@ -149,12 +150,12 @@ section {
 .icon__texto.btn {
     background-color: rgba(144, 146, 145, 0.124);
     font-weight: 800;
-    padding: 16px 24px 16px 24px;
-    margin: 0 0rem 0 1.8rem;
+    padding: 17px 24px 17px 24px;
+    margin: 0 0rem 0 1.2rem;
 }
 
 .icon__texto a {
-    margin-left: 1rem;
+    margin-left: 1.9rem;
     color: var(--primary-M-cian);
 }
 
@@ -169,6 +170,12 @@ section {
 .btn__derecha:hover svg .path {
     fill: rgba(239, 242, 240, 0.275);
 }
+
+
+/*fin de masterclaft*/
+
+
+/*inicio number numeros*/
 
 @media screen and (max-width: 767px) and (min-width: 240px) {
     .navigation {
@@ -223,6 +230,10 @@ section {
     section.sticky .menuResponsive {
         filter: invert(1);
     }
+    .btn {
+        padding: 10px 16px 10px 16px;
+    }
+    /* mastercraft card -- responsive*/
     .mastercraft {
         margin-top: -60px;
         width: 90%;
@@ -232,10 +243,22 @@ section {
         text-align: center;
         margin-bottom: 15px;
     }
-    .btn {
-        padding: 10px 16px 10px 16px;
-    }
     .icon__texto {
         display: none;
+        visibility: hidden;
     }
+    .mastercraft_btn {
+        align-items: center;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .mastercraft_btn .btn__izquierda.btn {
+        padding: 18px 25px 18px 25px;
+    }
+    .btn__derecha .icon {
+        align-items: center;
+        position: relative;
+        margin-top: 0.2rem;
+    }
+    /*fin de card mastercraft*/
 }
