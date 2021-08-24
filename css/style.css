@@ -427,6 +427,55 @@ section {
     padding: 10px 22px 10px 22px;
 }
 
+.movile_number {
+    display: none;
+    visibility: hidden;
+}
+
+
+/*efect*/
+
+.checkmark__circle {
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+    border-radius: 50%;
+    display: block;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px var(--primary-M-cian);
+    animation: fill .5s ease-in-out .5s forwards, scale .4s ease-in-out 1.4s both;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%,
+    100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.6, 1.4, 1.6);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px var(--primary-D-cian);
+    }
+}
+
 @media screen and (max-width: 767px) and (min-width: 240px) {
     .navegacion {
         margin-top: 1rem;
@@ -441,7 +490,7 @@ section {
         display: flex;
         background-color: var(--white);
         flex-direction: column;
-        z-index: 9999;
+        z-index: 5555;
         text-align: center;
         padding: 0;
         top: 45px;
@@ -590,5 +639,20 @@ section {
     }
     .modal_text p {
         font-size: 0.9rem;
+    }
+    .modals_number {
+        display: none;
+        visibility: hidden;
+    }
+    .movile_number {
+        display: flex;
+        visibility: visible;
+        align-items: center;
+    }
+    .movile_number h3 {
+        margin-right: 0.4rem;
+    }
+    .movile_number h4 {
+        color: var(--neutral-D-gray);
     }
 }
